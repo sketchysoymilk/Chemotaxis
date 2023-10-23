@@ -4,7 +4,7 @@ void setup()
 {
   size (500, 500);
   hi=new Walker(250, 250);
-  group = new Walker[100];
+  group = new Walker[1000];
   for (int i=0; i<group.length; i++) {
 
     group[i] = new Walker(250, 250);
@@ -39,6 +39,6 @@ class Walker
   void show()
   {
     fill(myColor);
-    arc(myX, myY, 30, 30, PI/4, PI+QUARTER_PI, PIE);
+    rect(myX,myY,10,10);
   }
 }
