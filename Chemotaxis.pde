@@ -3,16 +3,16 @@ Walker [] group;
 void setup()
 {
   size (500, 500);
-  hi=new Walker(250,250);
+  hi=new Walker(250, 250);
   group = new Walker[100];
   for (int i=0; i<group.length; i++) {
 
-    group[i] = new Walker(250,250);
+    group[i] = new Walker(250, 250);
   }
 }
 void draw()
 {
-  background(255,229,204);
+  background(255, 229, 204);
   hi.show();
   hi.walk();
   for (int i=0; i<group.length; i++) {
@@ -25,11 +25,11 @@ class Walker
   int myX, myY, myColor;
   Walker(int x, int y)
   {
-    if(x == 250)
+    if (x == 250)
       myX = (int)(Math.random()*450)+25;
-    if(y==250)
+    if (y==250)
       myY = (int)(Math.random()*450)+25;
-    myColor = color(255,255,153);
+    myColor = color(255, 255, 153);
   }
   void walk()
   {
